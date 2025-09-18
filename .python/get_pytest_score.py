@@ -59,9 +59,4 @@ if __name__ == "__main__":
 
     tests, passed, failures, errors, skipped, status_string = parse_junit_xml(results_file)
     grade = generate_grade(tests, passed)
-    # print(f"Total Tests: {tests}")
-    # print(f"Passed Tests: {passed}")
-    # print(f"Failed Tests: {failures}")
-    # print(f"Errors: {errors}")
-    # print(f"Skipped: {skipped}")
-    print(f"{grade:.2f}", ",", status_string)
+    print(f"{grade:.2f}")
